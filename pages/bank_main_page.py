@@ -19,5 +19,13 @@ class BankMainPage(BasePage):
         customer_name = self.element_is_visible(self.locators.CUSTOMER_NAME_TEXT).text
         return customer_name
 
+    def customer_logout(self):
+        self.element_is_visible(self.locators.LOGOUT_BUTTON).click()
+        self.element_is_visible(self.locators.HOME_BUTTON).click()
+        if self.element_is_visible(self.locators.CUSTOMER_LOGGIN_BUTTON):
+            return True
+        else:
+            return False
+
 
 

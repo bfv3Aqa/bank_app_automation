@@ -12,3 +12,6 @@ class TestBankMainPage:
         assert customer_name in ["Hermoine Granger", "Harry Potter", "Ron Weasly", "Albus Dumbledore",
                                  "Neville Longbottom"]
         time.sleep(3)
+        logout_status = login_page.customer_logout()
+        print(logout_status)
+        assert logout_status is True, "Logout fail"
