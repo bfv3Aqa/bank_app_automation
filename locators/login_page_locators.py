@@ -9,3 +9,4 @@ class LoginPageLocators:
     CUSTOMER_NAME_TEXT = (By.CSS_SELECTOR, 'span[class="fontBig ng-binding"]')
     LOGOUT_BUTTON = (By.CSS_SELECTOR, 'button[class="btn logout"]')
     HOME_BUTTON = (By.CSS_SELECTOR, 'button[class="btn home"]')
+
