@@ -10,7 +10,7 @@ class BankMainPage(BasePage):
     locators = LoginPageLocators()
 
     def customer_login(self):
-        main_button_loggin = self.element_is_visible(self.locators.CUSTOMER_LOGGIN_BUTTON).click()
+        self.element_is_visible(self.locators.CUSTOMER_LOGGIN_BUTTON).click()
         select = self.element_is_visible(self.locators.CUSTOMER_SELECT)
         select.click()
         select.send_keys(generated_customer())
