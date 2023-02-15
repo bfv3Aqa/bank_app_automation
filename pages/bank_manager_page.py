@@ -1,3 +1,5 @@
+import time
+
 from locators.bank_manager_page_locators import CustomersTableLocators
 from pages.base_page import BasePage
 
@@ -17,5 +19,4 @@ class CustomersTablePage(BasePage):
         return key_word
 
     def delete_customer_from_table(self):
-        last_customer = self.element_is_visible(self.locators.LAST_ELEMENT_IN_TABLE).text
-        return last_customer
+        pass

@@ -1,6 +1,6 @@
 import time
 
-from locators.add_customer_page import AddNewCustomerLocators
+from locators.add_customer_page_locators import AddNewCustomerLocators
 from pages.base_page import BasePage
 from generator.generator import generated_new_customer
 
