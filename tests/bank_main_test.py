@@ -13,3 +13,9 @@ class TestBankMainPage:
                                  "Neville Longbottom"]
         logout_status = login_page.customer_logout()
         assert logout_status is True, "Logout fail"
+
+    def test_home_button(self, driver):
+        login_page = BankMainPage(driver, "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/customer")
+        login_page.open()
+        url = login_page.home_button_usage()
+        assert url == 'https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login'

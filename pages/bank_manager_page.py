@@ -15,3 +15,7 @@ class CustomersTablePage(BasePage):
     def search_some_customer(self, key_word):
         self.element_is_visible(self.locators.SEARCH_FILED).send_keys(key_word)
         return key_word
+
+    def delete_customer_from_table(self):
+        last_customer = self.element_is_visible(self.locators.LAST_ELEMENT_IN_TABLE).text
+        return last_customer

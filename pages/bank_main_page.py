@@ -27,5 +27,10 @@ class BankMainPage(BasePage):
         else:
             return False
 
+    def home_button_usage(self):
+        self.element_is_visible(self.locators.HOME_BUTTON).click()
+        url = self.driver.current_url
+        return url
+
 
 
