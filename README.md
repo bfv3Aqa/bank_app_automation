@@ -1,1 +1,1 @@
-# bank_app_autimation
+# bank_app_automation
